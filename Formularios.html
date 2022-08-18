@@ -1,42 +1,86 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Formularios 1</title>
+        <title>Formularios</title>
     </head>
+
     <body>
-        <h1>Formularios</h1>
-        <form>
-            <label>Nombre</label>
+        <h1>Formulario 1</h1>        
+        <form action="registrar-formulario.html"
+            method="GET">
+            <label>Nombre:</label>
             <input type="text" 
-            maxlength="5"
-            size="20">
-            <label>Password</label>
+                maxlength="50"
+                size="20"
+                name="nombre">
+            <label>Password:</label>
             <input type="password" 
-            maxlength="4"
-            size="4">
-            <input type="sumbit" value="Enviar">
+                maxlength="4"
+                size="4"
+                name="password">
+            <input type="submit" value="Enviar">
         </form>
-
-
-        <title> Formularios</title>
-    </head>
-    <body>
-        <h1>Formularios 2</h1>
+        <h1>Formulario 2</h1>        
+        <form action="registrar-formulario.html"
+        method="get">
+        <input type="checkbox" value="MUSICA">
+            <label>Opcion1:</label>
+            <input type="checkbox" value="SERIES">
+            <label>Opcion2:</label>
+            <br>
+            <label>Opcion A</label>
+            <input type="radio" 
+                value="A"
+                name="opciones">
+            <label>Opcion B</label>
+            <input type="radio" 
+                value="B"
+                name="opciones">
+                <input type="submit" value="Enviar">
+        </form>
         <form>
-     <input type="checkbox" value="MUSICA">
-     <label>Opcion1</label>
-     <input type="checkbox" value="SERIES">
-     <label>Opcion2</label>
-     <br>
-     <label> Opcion A</label>
-     <input type="Radio" 
-     value="A"
-     name="opciones">
-     <label> Opcion B</label>
-     <input type="Radio" 
-     value="B"
-     name="opciones">
-
+            <table>
+                <tr> 
+                    <td>
+                        Nombre:
+                    </td>
+                    <td> 
+                        <input name="nombre" type="text">
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        Apellido:
+                    </td>
+                    <td> 
+                        <input name="nombre" type="text">
+                    </td>
+                    <tr> 
+                        <td>
+                            Fec.Nac:
+                        </td>
+                        <td> 
+                            <input 
+                            name="nombre" 
+                            type="date"
+                            min="2022-08-16"
+                            max="2022-08-22">
+                        </td>
+                        <tr> 
+                            <td>
+                                Edad:
+                            </td>
+                            <td> 
+                                <input name="nombre" 
+                                type="number" min="1" max="15000" step="2">
+                            </td>
+                </tr>
+            </table>
+        </form>
+        <hr>
+        <a href="index.html? param=valor">
+            Volver a Index
+        </a>
         </form>
     </body>
 </html>
