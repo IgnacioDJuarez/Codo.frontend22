@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    /*selector hijo*/
+    p > strong {
+        color: red;
+    }
+    div > img{
+        width: 300px
+    }
+    div p {
+        font-size: 30px;
+    }
+    /*hermanos ady tag + tag*/
+    h1 + p{
+        font-weight: bolder;
+    }
+    /*hermano gral*/
+    h2 ~ p {
+         height: 30px;
+         background-color: aqua;
+    }
+    /*pseudoclases*/
+    a:visited {
+        color: brown;
+    }
+    a:active {
+        color: turquoise;
+    }
+    h1:hover {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    img:hover {
+        width: 310px;
+        border: 5px solid yellow;
+    }
+    /*hermanos + ady o hermanos grales*/
+    h1 ~ p:hover{
+        font-size: 20px;
+
+    }
+    input:checked {
+        margin: 10px;
+    }
+    div.primerhijo {
+        padding-bottom: 25px;
+        text-align: center;
+    }
+    div.primerhijo p{
+          display: inline;
+        
+        }
+    /*first child*/
+    div.primerhijo p:first-child {
+        color: blueviolet;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    /*last child*/
+    div.primerhijo p:last-child {
+        color:rgb(32, 132, 165);
+        font-size: 16px;
+        font-weight: bolder;
+    }
+
+        </style>
+</head>
+<body>
+    
+    <p>
+        selector de hijos <strong>PADRE > HIJO </strong>
+    </p>
+
+    <p>
+        TEXTO <strong> texto strong</strong>sigue el texto
+    </p>
+
+    <div class="div1">
+         <img src="./scale.jfif">
+    <p>parrafo</p>
+    <p>parrafo</p>
+
+        </div>
+
+        <!-- hermanos adyacentes-->
+        <div>
+            <h1> hermanos adyacentes</h1>
+
+            <p>
+                texto 1
+            </p>
+            <p>
+                texto 2
+            </p>
+            <p>
+                texto 3
+            </p>
+        </div>
+
+        <div>
+            <h1> hermanos grales</h1>
+
+            <p>
+                hermano 1 de h2
+            <p>
+                hermano 2 de h2
+            </p>
+
+        </div>
+        
+    <!--selector de atributo en clase 7(index.html)-->
+<!--pseudoclases-->
+    <ul>
+        <li>
+            <a href="http://www.google.com.ar">Google</a>
+        </li>
+        <li>
+            <a href="http://www.facebook.com">Facebook</a>
+        </li>
+    </ul>
+    <input type="checkbox">
+    <div class="primerhijo">
+          <p>
+            p1
+          </p>
+          <p>
+            p2
+          </p>
+          <p>
+            p3
+          </p>
+          <p>
+            p4
+          </p>
+
+    </div>
+
+</body>
+</html>
